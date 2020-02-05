@@ -9,7 +9,7 @@ namespace E_prov_del2
     class CleanCar : Car
     {
         
-        public void CarClean()
+        public void CleanCars()
         {
             passengers = generator.Next(4);
 

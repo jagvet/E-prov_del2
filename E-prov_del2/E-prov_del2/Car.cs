@@ -13,17 +13,15 @@ namespace E_prov_del2
         public bool alreadyChecked = false;
         public Random generator = new Random();
 
-        public bool Examine(string cf, string cnf)
+        public bool Examine()
         {
-            int r = generator.Next(2);
-
-            if (r == 0)
+            if (contrabandAmount == 0)
             {
-                return true;
+                return false;
             }
             else
             {
-                return false;
+                return true;
             }
 
             alreadyChecked = true;

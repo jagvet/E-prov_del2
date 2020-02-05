@@ -8,8 +8,10 @@ namespace E_prov_del2
 {
     class ContrabandCar : Car
     {
-        public void ContrabandCar()
+        
+        public void ContrabandCars()
         {
+            passengers = generator.Next(5);
             contrabandAmount = generator.Next(1, 5);
         }
 
